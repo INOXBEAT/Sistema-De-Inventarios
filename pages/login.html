@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.0/dist/sweetalert2.min.css">
 </head>
 <body class="bg-light">
+    
   <!-- Container for centering the login form -->
   <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
     <div class="row">
@@ -43,29 +44,6 @@
   <!-- SweetAlert JS -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.0/dist/sweetalert2.min.js"></script>
 
-  <script>
-    // Manejador del formulario de login
-    $('#loginForm').submit(function (e) {
-      e.preventDefault();
-
-      const email = $('#email').val();
-      const password = $('#password').val();
-
-      // Simulamos una validación de login
-      if (email === 'admin@admin.com' && password === '12345') {
-        Swal.fire({
-          icon: 'success',
-          title: 'Bienvenido',
-          text: 'Iniciaste sesión correctamente.',
-        });
-      } else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Correo o contraseña incorrectos.',
-        });
-      }
-    });
   </script>
 </body>
 </html>
